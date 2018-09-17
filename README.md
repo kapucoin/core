@@ -1,6 +1,6 @@
 # KAPU Core
 
-![ARK Core](./)
+![KAPU Core](https://github.com/kapucoin/core/blob/develop/BANNER_2_CORE.jpg)
 
 [![Build Status](https://badgen.now.sh/travis/ArkEcosystem/core/master)](https://travis-ci.org/ArkEcosystem/core)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
