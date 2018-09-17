@@ -7,7 +7,7 @@
 
 ## Introduction
 
-This repository contains all plugins that make up the ARK Core.
+This repository contains all plugins that make up the KAPU Core.
 
 ## Documentation
 
