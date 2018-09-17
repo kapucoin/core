@@ -1,4 +1,4 @@
-# ARK Core
+# KAPU Core
 
 ![ARK Core](./banner.png)
 
