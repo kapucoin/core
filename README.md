@@ -1,6 +1,6 @@
 # KAPU Core
 
-![ARK Core](./banner.png)
+![ARK Core](./)
 
 [![Build Status](https://badgen.now.sh/travis/ArkEcosystem/core/master)](https://travis-ci.org/ArkEcosystem/core)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
@@ -19,9 +19,7 @@ This repository contains all plugins that make up the ARK Core.
 - API v1 : https://docs.ark.io/api/public/v1/
 - API v2 : https://docs.ark.io/api/public/v2/
 
-## GitHub Development Bounty
 
-- Get involved with ARK development and earn ARK coins : https://bounty.ark.io
 
 ## Core Packages
 
@@ -51,7 +49,7 @@ This repository contains all plugins that make up the ARK Core.
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@kapu.one. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -63,4 +61,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [KAPU COIN ](https://kapu.one)
