@@ -1,6 +1,6 @@
 {
   "name": "devnet",
-  "messagePrefix": "DARK message:\n",
+  "messagePrefix": "DKAPU message:\n",
   "bip32": {
     "public": 46090600,
     "private": 46089520
@@ -10,7 +10,7 @@
   "wif": 170,
   "client": {
     "token": "DARK",
-    "symbol": "DѦ",
+    "symbol": "Dk",
     "explorer": "https://dexplorer.ark.io"
   },
   "constants": [{
