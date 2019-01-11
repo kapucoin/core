@@ -1,6 +1,9 @@
 const configMainnet = require('./networks/ark/mainnet.json')
 const configDevnet = require('./networks/ark/devnet.json')
 const configTestnet = require('./networks/ark/testnet.json')
+const configKAPUMainnet = require('./networks/kapu/mainnet.json')
+const configKAPUDevnet = require('./networks/kapu/devnet.json')
+const configKAPUTestnet = require('./networks/kapu/testnet.json')
 
 /**
  * The Arktoshi base.
@@ -32,6 +35,11 @@ exports.CONFIGURATIONS = Object.freeze({
   ARK: {
     MAINNET: configMainnet,
     DEVNET: configDevnet,
-    TESTNET: configTestnet
+    TESTNET: configTestnet,
+  },
+  KAPU: {
+    MAINNET: configKAPUMainnet,
+    DEVNET: configKAPUDevnet,
+    TESTNET: configKAPUTestnet
   }
 })
