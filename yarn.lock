@@ -5262,9 +5262,10 @@ handlebars@4.x.x, handlebars@^4.0.2, handlebars@^4.0.3:
   optionalDependencies:
     uglify-js "^3.1.4"
 
-"hapi-api-version@https://github.com/faustbrian/hapi-api-version":
-  version "2.0.0"
-  resolved "https://github.com/faustbrian/hapi-api-version#9b8705e1b8b6aaded212dfea42ca832ace7aef50"
+hapi-api-version@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/hapi-api-version/-/hapi-api-version-2.1.1.tgz#1b211cdd425db76b45a5634d8710fb30108365d4"
+  integrity sha512-Wrk1CjBxkkokBQ7IRTjxY9s9sDQx0y3XP6OaTL8ErfKp6Pz6S+AKQRyE8y1wc+LYJ5DpOnBL0Px+JNlKf1FN3g==
   dependencies:
     boom "^5.2.0"
     hoek "^4.2.0"
