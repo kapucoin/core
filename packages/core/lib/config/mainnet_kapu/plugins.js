@@ -5,12 +5,12 @@ module.exports = {
     transports: {
       console: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug',
+          level: process.env.ARK_LOG_LEVEL || 'info',
         },
       },
       dailyRotate: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug',
+          level: process.env.ARK_LOG_LEVEL || 'info',
         },
       },
     },
@@ -42,7 +42,7 @@ module.exports = {
   '@arkecosystem/core-api': {
     enabled: !process.env.ARK_API_DISABLED,
     host: process.env.ARK_API_HOST || '0.0.0.0',
-    port: process.env.ARK_API_PORT || 9703,
+    port: process.env.ARK_API_PORT || 9702,
     whitelist: ['*'],
   },
   '@arkecosystem/core-webhooks': {
@@ -50,14 +50,14 @@ module.exports = {
     server: {
       enabled: process.env.ARK_WEBHOOKS_API_ENABLED,
       host: process.env.ARK_WEBHOOKS_HOST || '0.0.0.0',
-      port: process.env.ARK_WEBHOOKS_PORT || 9704,
+      port: process.env.ARK_WEBHOOKS_PORT || 9703,
       whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
     },
   },
   '@arkecosystem/core-graphql': {
     enabled: process.env.ARK_GRAPHQL_ENABLED,
     host: process.env.ARK_GRAPHQL_HOST || '0.0.0.0',
-    port: process.env.ARK_GRAPHQL_PORT || 9705,
+    port: process.env.ARK_GRAPHQL_PORT || 9704,
   },
   '@arkecosystem/core-forger': {
     hosts: [`http://127.0.0.1:${process.env.ARK_P2P_PORT || 9701}`],
