@@ -3,14 +3,13 @@
   "minimumNetworkReach": 1,
   "globalTimeout": 5000,
   "coldStart": 30,
-  "whiteList": [],
+  "whiteList": ["127.0.0.1", "::ffff:127.0.0.1"],
   "blackList": [],
   "list": [
     {
       "ip": "51.15.136.166",
       "port": 9700
     }
-],
-  "sources": [
-  ]
+  ],
+  "sources": []
 }
