@@ -1,3 +1,4 @@
 module.exports = {
-  ark: require('./ark')
+  ark: require('./ark'),
+  kapu: require('./kapu'),
 }
