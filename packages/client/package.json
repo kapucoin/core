@@ -1,12 +1,13 @@
 {
-  "name": "@arkecosystem/client",
-  "description": "A JavaScript library to interact with the ARK Blockchain",
-  "version": "0.1.3",
+  "name": "@kapucoin/client",
+  "description": "A JavaScript library to interact with the KAPU Blockchain",
+  "version": "0.1.4",
   "contributors": [
     "Brian Faust <brian@ark.io>",
     "Alex Barnsley <alex@ark.io>",
     "Lúcio Rubens <lucio@ark.io>",
-    "Juan A. Martín <juan@ark.io>"
+    "Juan A. Martín <juan@ark.io>",
+    "G. Silvestri <gsit80@gmail.com>"
   ],
   "license": "MIT",
   "main": "lib/index.js",

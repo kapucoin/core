@@ -85,7 +85,7 @@ describe('API - Client', () => {
         httpMock.onGet(/http.*\/api\/peers/).reply(200, { data })
       })
 
-      const foundPeers = await Client.findPeers('devnet')
+      const foundPeers = await Client.findPeers('mainnet')
       expect(foundPeers).toEqual([
         peers[1],
         peers[3],
@@ -115,7 +115,7 @@ describe('API - Client', () => {
           httpMock.onGet(/http.*\/api\/peers/).reply(200, { data })
         })
 
-        const foundPeers = await Client.findPeers('devnet')
+        const foundPeers = await Client.findPeers('mainnet')
         expect(foundPeers).toEqual(arrayContaining(peers))
         expect(foundPeers).not.toContainEqual(localPeer)
       }
@@ -138,7 +138,7 @@ describe('API - Client', () => {
         httpMock.onGet(/http.*\/api\/peers/).reply(200, { data })
       })
 
-      const foundPeers = await Client.findPeers('devnet')
+      const foundPeers = await Client.findPeers('mainnet')
       expect(foundPeers).toEqual(arrayContaining(peers))
       expect(foundPeers).not.toContainEqual(notOkPeer)
     })
@@ -156,13 +156,13 @@ describe('API - Client', () => {
       })
 
       it('returns the list of initial (hardcoded) peers', async () => {
-        const foundPeers = await Client.findPeers('devnet')
+        const foundPeers = await Client.findPeers('mainnet')
         expect(foundPeers).not.toEqual(arrayContaining(peers))
-        expect(foundPeers).toEqual(arrayContaining(initialPeers.devnet))
+        expect(foundPeers).toEqual(arrayContaining(initialPeers.mainnet))
       })
 
       it('should return the list of provided peers', async () => {
-        const foundPeers = await Client.findPeers('devnet', 2, peersOverride)
+        const foundPeers = await Client.findPeers('mainnet', 2, peersOverride)
         expect(foundPeers).not.toEqual(arrayContaining(peers))
         expect(foundPeers).toEqual(arrayContaining(peersOverride))
       })
@@ -195,7 +195,7 @@ describe('API - Client', () => {
         httpMock.onGet(/http.*\/api\/peers/).reply(200, { data })
       })
 
-      const client = await Client.connect('devnet')
+      const client = await Client.connect('mainnet')
       expect(client.getConnection().host).toEqual(`http://${peers[1].ip}:${peers[1].port}`)
     })
   })

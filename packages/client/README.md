@@ -1,19 +1,19 @@
 ![ARK Core](banner.png)
 
-# ARK - Client
+# KAPU - Client
 
 ## Installation
 
 ### Node.js
 
 ```bash
-yarn add @arkecosystem/client
+yarn add @kapucoin/client
 ```
 
 If you want to use the CDN version:
 
 ```html
-<script src="https://unpkg.com/@arkecosystem/client/dist/bundle.umd.js"></script>
+<script src="https://unpkg.com/@kapucoin/client/dist/bundle.umd.js"></script>
 ```
 
 ## Usage
@@ -21,17 +21,17 @@ If you want to use the CDN version:
 Import the library in Node.js:
 
 ```
-import ArkEcosystemClient from @arkecosystem/client
+import KapuEcosystemClient from @kapucoin/client
 ```
 or
 ```
-const ArkEcosystemClient require('@arkecosystem/client')
+const KapuEcosystemClient require('@kapucoin/client')
 ```
 
 Use the library:
 
 ```
-const client = new ArkEcosystemClient('<your host here>')
+const client = new KapuEcosystemClient('<your host here>')
 ```
 
 ### Examples
@@ -48,7 +48,8 @@ If you discover a security vulnerability within this package, please send an e-m
 - [Alex Barnsley](https://github.com/alexbarnsley)
 - [Juan A. Martín](https://github.com/j-a-m-l)
 - [All Contributors](../../../../contributors)
+- [G. Silvestri](https://github.com/gsilvestri)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [kapucoin](https://kapu.one)
