@@ -5,12 +5,12 @@ module.exports = {
     transports: {
       console: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug',
+          level: process.env.ARK_LOG_LEVEL || 'info',
         },
       },
       dailyRotate: {
         options: {
-          level: process.env.ARK_LOG_LEVEL || 'debug',
+          level: process.env.ARK_LOG_LEVEL || 'info',
         },
       },
     },
@@ -20,8 +20,8 @@ module.exports = {
       host: process.env.ARK_DB_HOST || 'localhost',
       port: process.env.ARK_DB_PORT || 5432,
       database:
-        process.env.ARK_DB_DATABASE || `ark_${process.env.ARK_NETWORK_NAME}`,
-      user: process.env.ARK_DB_USERNAME || 'ark',
+        process.env.ARK_DB_DATABASE || `kapu_${process.env.ARK_NETWORK_NAME}`,
+      user: process.env.ARK_DB_USERNAME || 'kapu',
       password: process.env.ARK_DB_PASSWORD || 'password',
     },
   },
@@ -33,7 +33,7 @@ module.exports = {
   },
   '@arkecosystem/core-p2p': {
     host: process.env.ARK_P2P_HOST || '0.0.0.0',
-    port: process.env.ARK_P2P_PORT || 4001,
+    port: process.env.ARK_P2P_PORT || 9701,
     whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
   },
   '@arkecosystem/core-blockchain': {
@@ -42,7 +42,7 @@ module.exports = {
   '@arkecosystem/core-api': {
     enabled: !process.env.ARK_API_DISABLED,
     host: process.env.ARK_API_HOST || '0.0.0.0',
-    port: process.env.ARK_API_PORT || 4003,
+    port: process.env.ARK_API_PORT || 9702,
     whitelist: ['*'],
   },
   '@arkecosystem/core-webhooks': {
@@ -50,17 +50,17 @@ module.exports = {
     server: {
       enabled: process.env.ARK_WEBHOOKS_API_ENABLED,
       host: process.env.ARK_WEBHOOKS_HOST || '0.0.0.0',
-      port: process.env.ARK_WEBHOOKS_PORT || 4004,
+      port: process.env.ARK_WEBHOOKS_PORT || 9703,
       whitelist: ['127.0.0.1', '::ffff:127.0.0.1'],
     },
   },
   '@arkecosystem/core-graphql': {
     enabled: process.env.ARK_GRAPHQL_ENABLED,
     host: process.env.ARK_GRAPHQL_HOST || '0.0.0.0',
-    port: process.env.ARK_GRAPHQL_PORT || 4005,
+    port: process.env.ARK_GRAPHQL_PORT || 9704,
   },
   '@arkecosystem/core-forger': {
-    hosts: [`http://127.0.0.1:${process.env.ARK_P2P_PORT || 4001}`],
+    hosts: [`http://127.0.0.1:${process.env.ARK_P2P_PORT || 9701}`],
   },
   '@arkecosystem/core-json-rpc': {
     enabled: process.env.ARK_JSON_RPC_ENABLED,
